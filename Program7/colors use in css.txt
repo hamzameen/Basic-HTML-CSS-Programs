@@ -1,0 +1,24 @@
+    color: red;
+    background-color: navy;
+---------------------------------------------------------------
+    color: #FF0000; /* Red */
+    background-color: #0000FF; /* Blue */
+---------------------------------------------------------------------------------
+    color: rgb(255, 0, 0); /* Red */
+    background-color: rgba(0, 0, 255, 0.5); /* Semi-transparent blue */
+---------------------------------------------------------------------------------------
+    color: hsl(0, 100%, 50%); /* Red */
+    background-color: hsla(240, 100%, 50%, 0.7); /* Semi-transparent blue */
+-----------------------------------------------------------------------------------------
+    color: hwb(0 0% 0%); /* Red */
+----------------------------------------------
+    background-color: color-mix(in srgb, red 50%, blue 50%); /* Mixes red and blue */
+---------------------------------------------------------------------------------------------
+    :root {
+      --primary-color: #3498db;
+    }
+    .element {
+      background-color: hsl(from var(--primary-color) h s calc(l + 20%)); /* Lighter version of primary-color */
+    }
+---------------------------------------------------------------------------------------------------------------------
+    border: 1px solid currentcolor;

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS List Properties</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        h1 {
+            color: darkblue;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .list1 {
+            list-style-type: square;
+            background-color: pink;
+            padding: 15px;
+            width: 250px;
+        }
+
+        .list2 {
+            list-style-image: url('https://cdn-icons-png.flaticon.com/16/56/56805.png');
+            background-color: skyblue;
+            padding: 15px;
+            width: 250px;
+        }
+
+        .list3 {
+            list-style-type: circle;
+            list-style-position: inside;
+            background-color: lightgreen;
+            padding: 15px;
+            width: 250px;
+        }
+
+        .list4 {
+            list-style: upper-roman inside;
+            background-color: violet;
+            padding: 15px;
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS List Properties</h1>
+
+    <h2>1. Using <code>list-style-type</code></h2>
+    <ul class="list1">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+
+    <h2>2. Using <code>list-style-image</code></h2>
+    <ul class="list2">
+        <li>Dog</li>
+        <li>Cat</li>
+        <li>Bird</li>
+    </ul>
+
+    <h2>3. Using <code>list-style-position</code></h2>
+    <ul class="list3">
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Banana</li>
+    </ul>
+
+    <h2>4. Using <code>list-style</code> (Shorthand)</h2>
+    <ol class="list4">
+        <li>Introduction</li>
+        <li>Methods</li>
+        <li>Conclusion</li>
+    </ol>
+
+</body>
+</html>

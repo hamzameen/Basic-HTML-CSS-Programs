@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Positioning Properties</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f9f9f9;
+        }
+
+        h1 {
+            color: darkblue;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .container {
+            border: 2px solid #333;
+            padding: 20px;
+            height: 600px;
+            position: relative;
+            background-color: #f0f0f0;
+        }
+
+        .static-box {
+            position: static;
+            background-color: lightblue;
+            padding: 10px;
+            border: 2px solid blue;
+            margin-bottom: 15px;
+        }
+
+        .relative-box {
+            position: relative;
+            top: 20px;
+            left: 30px;
+            background-color: lightgreen;
+            padding: 10px;
+            border: 2px solid green;
+            margin-bottom: 15px;
+        }
+
+        .absolute-box {
+            position: absolute;
+            bottom: 200px;
+            right: 30px;
+            background-color: lightcoral;
+            padding: 10px;
+            border: 2px solid red;
+            width: 200px;
+        }
+
+        .fixed-box {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background-color: gold;
+            border: 2px solid orange;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .sticky-box {
+            position: sticky;
+            top: 0;
+            background-color: lightpink;
+            border: 2px solid deeppink;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Positioning Properties</h1>
+
+    <div class="sticky-box">Sticky Position: I stay at the top when scrolling!</div>
+
+    <div class="container">
+        <div class="static-box">Static Position: This is the default position.</div>
+
+        <div class="relative-box">Relative Position: Moved 20px down and 30px right.</div>
+
+        <div class="absolute-box">Absolute Position: Positioned 100px from top and 30px from right of container.</div>
+
+        <p>
+            Scroll down to see the effect of sticky and fixed positioning. Lorem ipsum dolor sit amet, 
+            consectetur adipiscing elit. Nulla varius quam id urna accumsan, quis viverra est dapibus. 
+            Sed tincidunt, sapien sit amet pretium luctus, massa metus facilisis ipsum, non ultricies 
+            lorem lacus eget risus. Duis a sem id massa malesuada dignissim. Suspendisse potenti.
+        </p>
+
+        <p>
+            Curabitur ut augue nec justo sagittis porta. Cras gravida orci non leo feugiat, 
+            at varius sem posuere. Sed ac risus et justo tristique vestibulum. Quisque eget 
+            elit sapien. Mauris non nisi felis. Integer volutpat euismod erat, ut tincidunt 
+            lacus ultricies non. Pellentesque habitant morbi tristique senectus et netus 
+            et malesuada fames ac turpis egestas.
+        </p>
+    </div>
+
+    <div class="fixed-box">Fixed Position: I stay here even when you scroll!</div>
+
+</body>
+</html>

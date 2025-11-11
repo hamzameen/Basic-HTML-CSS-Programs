@@ -1,0 +1,17 @@
+p {
+		color: green;
+		font-size: 18px;
+		text-align: right;
+        }
+
+h1 {
+		color: purple;
+        }
+
+body {
+		background-color: skyblue;
+	}
+
+ol {
+		color: green;
+	}

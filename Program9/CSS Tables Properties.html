@@ -1,0 +1,81 @@
+<!Doctype html>
+<html>
+<head><title>CSS Tables Properties</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+            text-decoration: underline;
+        }
+
+        table {
+            width: 60%;
+            border-collapse: collapse;
+            margin: 20px auto;
+            background-color: #ffffff;
+        }
+
+        th, td {
+            border: 2px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #0066cc;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #e6f7ff;
+        }
+
+        tr:hover {
+            background-color: #ffe6b3;
+            transition: 0.3s;
+        }
+
+        caption {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: darkgreen;
+        }
+    </style></head>
+<body>
+<h1><u><i>Education Details</i></u></h1>
+<table border="">
+	<tr>
+<th>Course</th>
+<th>Board</th>
+<th>Total Marks</th>
+<th>Marks Obtained</th>
+<th>%</th>
+	</tr>
+	<tr>
+<td>X</td>
+<td>UP</td>
+<td>600</td>
+<td>485</td>
+<td>80.8%</td>
+	</tr>
+	<tr>
+<td>XII</td>
+<td>UP</td>
+<td>500</td>
+<td>286</td>
+<td>57.2%</td>
+	</tr>
+</table>
+</body>
+</html>
